@@ -23,6 +23,8 @@
   <link href="{{ asset('admin/assets/css/sidebar-menu.css') }}" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="{{ asset('admin/assets/css/app-style.css') }}" rel="stylesheet"/>
+
+  <link href="{{ asset('admin/assets/css/tool.css') }}" rel="stylesheet"/>
   @yield('css')
 
 </head>
@@ -68,10 +70,22 @@
   <script src="{{ asset('admin/assets/js/app-script.js') }}"></script>
   <!-- Chart js -->
 
-  <script src="{{ asset('admin/assets/plugins/Chart.js/Chart.min.js') }}"></script>
+  {{-- <script src="{{ asset('admin/assets/plugins/Chart.js/Chart.min.js') }}"></script> --}}
 
   <!-- Index js -->
   <script src="{{ asset('admin/assets/js/index.js') }}"></script>
+
+  <script src="{{ asset('admin/assets/js/tool.js') }}"></script>
+
+  <script src='https://cdn.tiny.cloud/1/vdqx2klew412up5bcbpwivg1th6nrh3murc6maz8bukgos4v/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+	</script>
+
+<script>
+tinymce.init({
+  selector:'textarea',
+  height: 600,
+  });
+</script>
   @yield('js')
 
 
